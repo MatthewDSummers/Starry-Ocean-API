@@ -55,11 +55,11 @@ Replace `{identifier}` with the appropriate series or character information (see
 
 
 * * * 
-### 1. REQUIREMENTS & INSTALLATION
+### 2. REQUIREMENTS & INSTALLATION
 
 ## Requirements
 
-# This app uses the Django REST framework.
+### This app uses the Django REST framework.
 
 * REST framework requires the following: 
 
@@ -96,7 +96,7 @@ Replace `{identifier}` with the appropriate series or character information (see
 
 3. Include Starry Ocean API in your project urls.py:
 
-# Project urls.py:
+Project urls.py:
 
 ```python
     from django.urls import path, include
@@ -369,7 +369,7 @@ Retrieve all characters from Star Ocean 1 and Star Ocean 2.
 
 
 * * *
-### ERRORS
+### 5. ERRORS
 
 **All errors will return appropriate HTTP response codes accompanied by the following JSON error object.**
 
