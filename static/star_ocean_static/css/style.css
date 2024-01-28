@@ -1,0 +1,254 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Baskervville&family=Libre+Baskerville&display=swap');
+
+
+.w75-sm-w50-lg {
+    width: 75%;
+}
+
+.text-white{
+    color: white;
+}
+
+.yellow{
+    /* color: rgb(251, 245, 153); */
+    color: rgb(255, 246, 122);
+}
+.yellow-dark{
+    color: rgb(230, 202, 21);
+}
+.font-baskerville{
+    font-family: 'Libre Baskerville', serif;
+}
+.so-txt-shadow{
+    text-shadow: 2px 2px 1px rgb(73, 76, 176);
+}
+#star-ocean-container{
+    /* position: relative; */
+    padding: .5em 1em;
+    /* min-height: 80vh;  */
+    min-height: 100vh; 
+    background-image: url('/static/star_ocean_static/media/images/star_ocean/earth-bg.jpg');
+    background-size: cover;
+    background-position: center top;
+    background-position: center center;
+    background-attachment: fixed;
+    background-position-y: -85px; 
+
+}
+
+#copyright{
+    /* position: absolute;
+    bottom: 0; */
+    /* background-color: rgba(84, 84, 84, 0.345);
+    background-color: red; */
+    background-color: black;
+    padding: 1em;
+}
+
+.so-char-div{
+    /* border: 1px solid rgb(231, 149, 149); */
+    padding: 1em;
+}
+
+.so-char-details-div{
+    border-radius: 7px;
+    border-radius: 0px 0 7px 7px;
+    padding: .2em .5em;
+    font-family: 'Libre Baskerville', serif;
+    /* background-color: rgba(81, 187, 95, 0.133); */
+    background-color: rgba(81, 187, 95, 0.291);
+    text-shadow: 2px 2px 2px black;
+}
+.char-desc-div {
+    height: 10em;
+    border-radius: 9px;
+    overflow: auto;
+    padding: .61em 0;
+    cursor: default;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 14px;
+    position: relative;
+    margin-bottom: .5em;
+}
+    /* hide the bottom gradient if not needed (see JS) */
+    .char-desc-div.hide-scroll-indicator:after {
+        height: 0;
+    }
+    .char-desc-div:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 45%;
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(16, 57, 22, 0.71)); /* Gradient effect */
+        pointer-events: none;
+    }
+
+
+
+#so-search-div{
+    padding: 1em;
+    margin-top: .7em;
+}
+    #star-ocean-search-bar{
+        border: 1px solid black;
+        border-radius: 12px;
+        padding: .2em .65em;
+        font-family: 'Libre Baskerville', serif;
+    }
+    #star-ocean-search-bar-btn{
+        border: 1px solid black;
+        border-radius: 12px;
+        padding: .2em .55em;
+        font-family: 'Libre Baskerville', serif;
+        background-color: rgb(255, 246, 122);
+        color: black;
+    }
+    #so-search-div h3{
+        color: rgb(255, 255, 255);
+    }
+#so-search-error-div{
+    display: none;
+    position: relative;
+    height: 4em;
+    margin-top: .7em;
+    border-radius: 9px;
+    padding: 1em;
+    background-color: rgba(195, 55, 55, 0.789);
+    text-align: center;
+    text-shadow: 1px 1px 3px black;
+}
+.so-series-trigger-div{
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+.so-series-trigger-div::before {
+    content: "";
+    position: absolute;
+    border-radius: 30px;
+    background-color: rgba(91, 119, 201, 0.18);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1; /* Ensure that the pseudo-element is above the image */
+}
+.so-series-trigger-div:hover::before {
+    opacity: 1;
+}
+    .so-series-trigger-div img{
+        border-radius: 30px;
+        width: 400px;
+        height: 200px;
+        display: inline-block;
+    }
+
+@media (min-width: 768px){
+    .w75-sm-w50-lg {
+        width: 50%;
+    }
+    #star-ocean-container{
+        background-position-y: -165px; 
+    }
+}
+
+/*   CHARACTER IMAGE DIVS (.carousel-item)  */
+.so1-game-label, .so-fdr-game-label, .so2-R-game-label, .so2-game-label{
+    position: relative;
+    font-family: 'Libre Baskerville', serif;
+}
+
+    .so-fdr-game-label::after, .so1-game-label::after, .so2-game-label::after, .so2-R-game-label::after{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        border-radius:9px 0 0 0px;
+        padding: 1em;
+    }
+        .so-fdr-game-label::after{
+            content: 'Star Ocean: First Departure R';
+            background-color: hsla(56, 100%, 74%, 0.73);
+        }
+        .so1-game-label::after{
+            content: ' Star Ocean (SNES) ';
+            /* background-color: hsla(238, 89%, 59%, 0.73); */
+            background: linear-gradient(hsla(209, 76%, 41%, 0.777), hsla(21, 55%, 54%, 0.777));
+            color: white;
+        }
+        .so2-R-game-label::after{
+            content: 'Star Ocean: The Second Story R';
+            background-color: hsla(56, 100%, 74%, 0.73);
+        }
+        .so2-game-label::after{
+            content: 'Star Ocean: The Second Story';
+            /* background-color: hsla(238, 89%, 59%, 0.73); */
+            background: linear-gradient(hsl(254, 42%, 22%, 0.777), hsla(222, 48%, 33%, 0.777), hsla(209, 49%, 35%, 0.777), hsl(288,19%,37%, 0.777));
+            color: white;
+        }
+
+    /* IMAGE RESULTS */
+        /* Star Ocean 1  */
+        .so-fdr-game-label.single-result img{
+            width:250px !important;
+            height: 450px !important;
+        }
+            .so-fdr-game-label:not(.single-result) img{
+                width:350px !important;
+                height: 450px !important;
+            }
+
+        .so1-game-label.single-result img{
+            width:310px !important;
+            height: 450px !important
+        }
+            .so1-game-label:not(.single-result) img{
+                width:410px !important;
+                height: 450px !important;
+            }
+
+    /* Star Ocean 2 */
+        .so2-R-game-label.single-result img{
+            width:250px !important;
+            height: 525px !important;
+            /* width:375px !important;
+            height: 525px !important; */
+        }
+            .so2-R-game-label:not(.single-result) img{
+                width:250px !important;
+                height: 525px !important;
+            }
+
+        .so2-game-label.single-result img{
+            width: 300px !important;
+            height: 525px !important
+        }
+            .so2-game-label:not(.single-result) img{
+                width:280px !important;
+                height: 525px !important;
+            }
+
+/* CAROUSEL CONTROLS  */
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='rgba(194, 182, 14, 0.852)' viewBox='0 0 12 12'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='rgba(194, 182, 14, 0.852)' viewBox='0 0 12 12'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+.so-char-portrait-div{
+    border-radius: 9px 9px 0 0px;
+}
+
+/* utility */
+
+.hidden{
+    display: none !important;
+}
