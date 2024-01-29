@@ -123,20 +123,20 @@ Project urls.py:
 * * * 
 ### 4. ENDPOINTS
 
-## List of Endpoints
--   `starry-ocean/series/{series_number}`
--   `starry-ocean/series/{series_number}/characters/{character_name}`
--   `starry-ocean/characters/{character_name}`
--   `starry-ocean/characters/all`
+* List of Endpoints
+    -   `starry-ocean/series/{series_number}`
+    -   `starry-ocean/series/{series_number}/characters/{character_name}`
+    -   `starry-ocean/characters/{character_name}`
+    -   `starry-ocean/characters/all`
 
 
-1. `starry-ocean/series/{series_number}`
+**1. `starry-ocean/series/{series_number}`**
 
-Retrieve all characters from the specified Star Ocean series.
+    Retrieve all characters from the specified Star Ocean series.
 
-Calls for either Star Ocean 1 game will be handled simply by one endpoint: /starry-ocean/series/1
+    Calls for either Star Ocean 1 game will be handled simply by one endpoint: /starry-ocean/series/1
 
-Likewise for Star Ocean 2: /starry-ocean/series/2
+    Likewise for Star Ocean 2: /starry-ocean/series/2
 
 **Parameters:**
 
@@ -196,9 +196,9 @@ Likewise for Star Ocean 2: /starry-ocean/series/2
 
 
 
-2. `starry-ocean/series/{series_number}/characters/{character_name}`
+**2. `starry-ocean/series/{series_number}/characters/{character_name}`**
 
-Direct look-up to retrieve a specific character from a specific series.
+    Direct look-up to retrieve a specific character from a specific series.
 
 **Parameters:**
 
@@ -236,9 +236,9 @@ Direct look-up to retrieve a specific character from a specific series.
 ```
 
 
-3. `starry-ocean/characters/{character_name}`
+**3. `starry-ocean/characters/{character_name}`**
 
-Retrieve a single character by providing a partial or exact character name.
+    Retrieve a single character by providing a partial or exact character name.
 
 **Parameters:**
 
@@ -268,9 +268,9 @@ Retrieve a single character by providing a partial or exact character name.
 }
 ```
 
-4. `starry-ocean/characters/all`
+**4. `starry-ocean/characters/all`**
 
-Retrieve all characters from Star Ocean 1 and Star Ocean 2.
+    Retrieve all characters from Star Ocean 1 and Star Ocean 2.
 
 ```json
 {
