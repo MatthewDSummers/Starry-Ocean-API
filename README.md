@@ -6,13 +6,17 @@ Starry Ocean API Documentation
 ### TABLE OF CONTENTS
 
 * 1.  Explanation
-        * Overview
-        * Options
-        * Features
-* 2. Requirements & Installation
-* 3.  Data Type
-* 4.  Endpoints
-* 5.  Errors
+        * a. Overview
+        * b. Options
+        * c. Features
+* 2. Requirements 
+* 3. Installation
+        * a. Clone the repository:
+        * b. Your project settings.py
+        * c. Your project urls.py
+* 4. Data Type
+* 5. Endpoints
+* 6. Errors
 
 * * *
 
@@ -20,7 +24,7 @@ Starry Ocean API Documentation
 
 * * *
 
-## 1. EXPLANATION 
+## i. EXPLANATION 
 
 ### Overview
 
@@ -55,11 +59,9 @@ The Starry Ocean API allows you to search for characters from the following Star
 
 
 * * * 
-## 2. REQUIREMENTS & INSTALLATION
+## ii. REQUIREMENTS
 
-### Requirements
-
-#### This app uses the Django REST framework.
+### Install Django and Django REST Framework.
 
 * REST framework requires the following: 
 
@@ -70,16 +72,20 @@ The Starry Ocean API allows you to search for characters from the following Star
     pip install django
     pip install djangorestframework
 ```
+* * * 
 
-### Installation
 
-**1. Clone the repository:**
+
+* * * 
+## iii. INSTALLATION
+
+**a. Clone the repository:**
 
 ```bash
     git clone https://github.com/MatthewDSummers/Starry-Ocean-API.git
 ```
 
-**2. Your project settings.py:**
+**b. Include Starry Ocean API in your your project settings.py:**
 
 Project settings.py
 
@@ -98,7 +104,7 @@ Project settings.py
     ]
 ```
 
-**3. Include Starry Ocean API in your project urls.py:**
+**c. Include Starry Ocean API in your project urls.py:**
 
 Project urls.py:
 
@@ -116,7 +122,7 @@ Project urls.py:
 
 * * *
 
-## 3. DATA TYPE
+## iv. DATA TYPE
 
 **Starry Ocean API returns the following data type:**
    - JSON
@@ -126,7 +132,7 @@ Project urls.py:
 
 
 * * * 
-## 4. ENDPOINTS
+## v. ENDPOINTS
 
 ### Calling the Host Directly
 
@@ -388,7 +394,7 @@ Retrieve all characters from Star Ocean 1 and Star Ocean 2.
 
 
 * * *
-## 5. ERRORS
+## vi. ERRORS
 
 ### All errors will return appropriate HTTP response codes accompanied by the following JSON error object.
 
