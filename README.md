@@ -139,9 +139,9 @@ Likewise for Star Ocean 2: /starry-ocean/series/2
 **Parameters:**
 
 *   `{series_number}` string, required
-*   Expected values: '1' or '2'
-*   Example usage: /starry-ocean/series/1
-*   Example response:
+    -   Expected values: '1' or '2'
+    -   Example usage: /starry-ocean/series/1
+**Example response:**
 ```json
 {
     "Roddick Farrence": {
@@ -200,10 +200,10 @@ Direct look-up to retrieve a specific character from a specific series.
 **Parameters:**
 
 *   `{series_number}` string, required
-*   Expected values: '1' or '2'
+    -   Expected values: '1' or '2'
 *   `{character_name}` string, required
-*   Example value: 'Cyuss Warren'
-*   Example usage: /starry-ocean/series/1/characters/Cyuss Warren
+    -   Example value: 'Cyuss Warren'
+**Example usage: /starry-ocean/series/1/characters/Cyuss Warren**
 
 ```json
 {
@@ -239,8 +239,8 @@ Retrieve a single character by providing a partial or exact character name.
 **Parameters:**
 
 *   `{character_name}` string, required
-*   Example value: 'Rena'
-*   Example usage: /starry-ocean/characters/Rena
+    - Example value: 'Rena'
+**Example usage: /starry-ocean/characters/Rena**
 
 ```json
 {
