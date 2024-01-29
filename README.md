@@ -124,24 +124,27 @@ Project urls.py:
 ### 4. ENDPOINTS
 
 ## List of Endpoints
-*   `starry-ocean/series/{series_number}`
-*   `starry-ocean/series/{series_number}/characters/{character_name}`
-*   `starry-ocean/characters/{character_name}`
-*   `starry-ocean/characters/all`
+-   `starry-ocean/series/{series_number}`
+-   `starry-ocean/series/{series_number}/characters/{character_name}`
+-   `starry-ocean/characters/{character_name}`
+-   `starry-ocean/characters/all`
 
 
 1. `starry-ocean/series/{series_number}`
 
-Retrieve all characters from the specified Star Ocean series.  
+Retrieve all characters from the specified Star Ocean series.
+
 Calls for either Star Ocean 1 game will be handled simply by one endpoint: /starry-ocean/series/1
+
 Likewise for Star Ocean 2: /starry-ocean/series/2
 
 **Parameters:**
 
 *   `{series_number}` string, required
     -   Expected values: '1' or '2'
-    -   Example usage: /starry-ocean/series/1
-**Example response:**
+
+**Example usage: /starry-ocean/series/1**
+
 ```json
 {
     "Roddick Farrence": {
@@ -203,6 +206,7 @@ Direct look-up to retrieve a specific character from a specific series.
     -   Expected values: '1' or '2'
 *   `{character_name}` string, required
     -   Example value: 'Cyuss Warren'
+
 **Example usage: /starry-ocean/series/1/characters/Cyuss Warren**
 
 ```json
@@ -240,6 +244,7 @@ Retrieve a single character by providing a partial or exact character name.
 
 *   `{character_name}` string, required
     - Example value: 'Rena'
+
 **Example usage: /starry-ocean/characters/Rena**
 
 ```json
