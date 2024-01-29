@@ -11,7 +11,7 @@ Starry Ocean API Documentation
         * c. Features
 * 2. Requirements 
 * 3. Installation
-        * a. Clone the repository:
+        * a. Clone the repository
         * b. Your project settings.py
         * c. Your project urls.py
 * 4. Data Type
@@ -40,7 +40,8 @@ The Starry Ocean API allows you to search for characters from the following Star
   - `Star Ocean: The Second Story R` (Nintendo Switch, PlayStation 5, PlayStation 4, Microsoft Windows)
 
 ### Options
-* Install this app for its GUI (as seen on: https://www.matthewsummers.dev/starry-ocean/)
+<!-- * Install this app for its GUI (as seen on: https://www.matthewsummers.dev/starry-ocean/) -->
+* Install this app for its GUI (as seen on: [Starry Ocean](https://www.matthewsummers.dev/starry-ocean){:target="_blank"})
     - Follow this documentation fully
 * Don't install this app and just call the hosted API directly to access the data
     - Skip to `4. ENDPOINTS` below
