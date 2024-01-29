@@ -7,8 +7,8 @@ Starry Ocean API Documentation
 
 1.  Explanation
   - Overview
+  - Options
   - Features
-  - Calling the Host Directly
 2. Requirements & Installation
 3.  Data Type
 4.  Endpoints
@@ -20,46 +20,46 @@ Starry Ocean API Documentation
 
 * * *
 
-### 1. EXPLANATION 
+## 1. EXPLANATION 
 
-## Overview
+### Overview
 
-Leveraging the Django REST Framework and designed with a class-based view approach, STARRY OCEAN API serves as a compendium of Star Ocean (© Square Enix) characters.
+Leveraging the Django REST Framework and designed with a class-based view approach, STARRY OCEAN API serves as either a REST API / GUI toward a compendium of Star Ocean (© Square Enix) characters.
 
 The Starry Ocean API allows you to search for characters from the following Star Ocean games:
 ###### Star Ocean 1
-  - Star Ocean First Departure R (PS4, Nintendo Switch)
-  - Star Ocean: Fantastic Space Odyssey (SNES)
+  - `Star Ocean First Departure R` (PS4, Nintendo Switch)
+  - `Star Ocean: Fantastic Space Odyssey` (SNES)
 
 ###### Star Ocean 2
+  - `Star Ocean: The Second Story` (Playstation)
+  - `Star Ocean: The Second Story R` (Nintendo Switch, PlayStation 5, PlayStation 4, Microsoft Windows)
 
-  - Star Ocean: The Second Story (Playstation)
-  - Star Ocean: The Second Story R (Nintendo Switch, PlayStation 5, PlayStation 4, Microsoft Windows)
+### Options
+* Install this app for its GUI (as seen on: https://www.matthewsummers.dev/starry-ocean/)
+    - Follow this documentation fully
+* Don't install this app and just call the hosted API directly to access the data
+    - Skip to `4. ENDPOINTS` below
 
+### Features
+* The app provides a GUI with a search feature to allow users to search for Star Ocean 1 and 2 characters
+    - Provides character descriptions
+    - Provides character images
+* The app also provides options to display a compilation of each respective series' characters on a one-page display
 
-## Features
-
-- Search Feature for Star Ocean 1 and 2 characters
-- Django app to serve this purpose
-
-## Calling the Host Directly
-
-Alternatively, if you don't want to use the Django app, you can call the host directly using the following format:
-
-`https://matthewsummers.dev/starry-ocean/{identifier}`
-
-Replace `{identifier}` with the appropriate series or character information (see `Endpoints` below).
-
-* * * 
-
-
+* Alternatively, forgo the app installation.  Call the host directly:
+    - Can be used by external services to access the data
 
 * * * 
-### 2. REQUIREMENTS & INSTALLATION
 
-## Requirements
 
-### This app uses the Django REST framework.
+
+* * * 
+## 2. REQUIREMENTS & INSTALLATION
+
+### Requirements
+
+#### This app uses the Django REST framework.
 
 * REST framework requires the following: 
 
@@ -71,14 +71,18 @@ Replace `{identifier}` with the appropriate series or character information (see
     pip install djangorestframework
 ```
 
-## Installation
+### Installation
 
-1. Clone the repository:
+**1. Clone the repository:**
+
 ```bash
     git clone https://github.com/MatthewDSummers/Starry-Ocean-API.git
 ```
 
-2. Your project settings.py:
+**2. Your project settings.py:**
+
+Project settings.py
+
 ```python
     # Application definition
     INSTALLED_APPS = [
@@ -94,7 +98,7 @@ Replace `{identifier}` with the appropriate series or character information (see
     ]
 ```
 
-3. Include Starry Ocean API in your project urls.py:
+**3. Include Starry Ocean API in your project urls.py:**
 
 Project urls.py:
 
@@ -112,8 +116,9 @@ Project urls.py:
 
 * * *
 
-### 3. DATA TYPE
-    Starry Ocean API returns the following data type:
+## 3. DATA TYPE
+
+**Starry Ocean API returns the following data type:**
    - JSON
 
 * * * 
@@ -121,7 +126,16 @@ Project urls.py:
 
 
 * * * 
-### 4. ENDPOINTS
+## 4. ENDPOINTS
+
+### Calling the Host Directly
+
+Alternatively, if you don't want to use the Django app provided, you can call the host directly using the following format:
+
+`https://matthewsummers.dev/starry-ocean/{identifier}`
+
+Replace `{identifier}` with the appropriate series or character information (see `List of Endpoints` below).
+
 
 List of Endpoints
   -   `starry-ocean/series/{series_number}`
@@ -374,9 +388,9 @@ Retrieve all characters from Star Ocean 1 and Star Ocean 2.
 
 
 * * *
-### 5. ERRORS
+## 5. ERRORS
 
-**All errors will return appropriate HTTP response codes accompanied by the following JSON error object.**
+### All errors will return appropriate HTTP response codes accompanied by the following JSON error object.
 
 **Example error call**
 
@@ -407,8 +421,11 @@ call_the_api()
 **Example error response**
 
 XHR Status: 400
+
 Status: error
+
 Error: Bad Request
+
 Error data:
 
 ```javascript
