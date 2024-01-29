@@ -3,7 +3,7 @@ Starry Ocean API Documentation
 
 * * *
 
-### TABLE OF CONTENTS
+## TABLE OF CONTENTS
 
 * 1.  Explanation
         * a. Overview
@@ -24,9 +24,9 @@ Starry Ocean API Documentation
 
 * * *
 
-## i. EXPLANATION 
+### i. EXPLANATION 
 
-### Overview
+**a. Overview**
 
 Leveraging the Django REST Framework and designed with a class-based view approach, STARRY OCEAN API serves as either a REST API / GUI toward a compendium of Star Ocean (© Square Enix) characters.
 
@@ -39,14 +39,13 @@ The Starry Ocean API allows you to search for characters from the following Star
   - `Star Ocean: The Second Story` (Playstation)
   - `Star Ocean: The Second Story R` (Nintendo Switch, PlayStation 5, PlayStation 4, Microsoft Windows)
 
-### Options
-<!-- * Install this app for its GUI (as seen on: https://www.matthewsummers.dev/starry-ocean/) -->
-* Install this app for its GUI as seen on: [Starry Ocean](https://www.matthewsummers.dev/starry-ocean){:target="_blank"} 
+**b. Options**
+* Install this app for its GUI as seen on [Starry Ocean](https://www.matthewsummers.dev/starry-ocean) 
     - Follow this documentation fully
 * Don't install this app and just call the hosted API directly to access the data
     - Skip to `4. ENDPOINTS` below
 
-### Features
+**c. Features**
 * The app provides a GUI with a search feature to allow users to search for Star Ocean 1 and 2 characters
     - Provides character descriptions
     - Provides character images
@@ -60,9 +59,9 @@ The Starry Ocean API allows you to search for characters from the following Star
 
 
 * * * 
-## ii. REQUIREMENTS
+### ii. REQUIREMENTS
 
-### Install Django and Django REST Framework.
+**Install Django and Django REST Framework.**
 
 * REST framework requires the following: 
 
@@ -78,7 +77,7 @@ The Starry Ocean API allows you to search for characters from the following Star
 
 
 * * * 
-## iii. INSTALLATION
+### iii. INSTALLATION
 
 **a. Clone the repository:**
 
@@ -123,7 +122,7 @@ Project urls.py:
 
 * * *
 
-## iv. DATA TYPE
+### iv. DATA TYPE
 
 **Starry Ocean API returns the following data type:**
    - JSON
@@ -133,9 +132,9 @@ Project urls.py:
 
 
 * * * 
-## v. ENDPOINTS
+### v. ENDPOINTS
 
-### Calling the Host Directly
+**Calling the Host Directly**
 
 Alternatively, if you don't want to use the Django app provided, you can call the host directly using the following format:
 
@@ -395,9 +394,9 @@ Retrieve all characters from Star Ocean 1 and Star Ocean 2.
 
 
 * * *
-## vi. ERRORS
+### vi. ERRORS
 
-### All errors will return appropriate HTTP response codes accompanied by the following JSON error object.
+#### All errors will return appropriate HTTP response codes accompanied by the following JSON error object.
 
 **Example error call**
 
