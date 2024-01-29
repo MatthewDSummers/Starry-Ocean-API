@@ -198,7 +198,7 @@ Likewise for Star Ocean 2: /starry-ocean/series/2
 
 #### 2. `starry-ocean/series/{series_number}/characters/{character_name}`
 
-    Direct look-up to retrieve a specific character from a specific series.
+Direct look-up to retrieve a specific character from a specific series.
 
 **Parameters:**
 
@@ -238,7 +238,7 @@ Likewise for Star Ocean 2: /starry-ocean/series/2
 
 #### 3. `starry-ocean/characters/{character_name}`
 
-    Retrieve a single character by providing a partial or exact character name.
+Retrieve a single character by providing a partial or exact character name.
 
 **Parameters:**
 
@@ -270,7 +270,7 @@ Likewise for Star Ocean 2: /starry-ocean/series/2
 
 #### 4. `starry-ocean/characters/all`
 
-    Retrieve all characters from Star Ocean 1 and Star Ocean 2.
+Retrieve all characters from Star Ocean 1 and Star Ocean 2.
 
 ```json
 {
