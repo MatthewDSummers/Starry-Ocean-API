@@ -43,7 +43,7 @@ The Starry Ocean API allows you to search for characters from the following Star
 * Install this app for its GUI as seen on [Starry Ocean](https://www.matthewsummers.dev/starry-ocean) 
     - Follow this documentation fully
 * Don't install this app and just call the hosted API directly to access the data
-    - Skip to `4. ENDPOINTS` below
+    - Skip to `v. ENDPOINTS` below
 
 **c. Features**
 * The app provides a GUI with a search feature to allow users to search for Star Ocean 1 and 2 characters
