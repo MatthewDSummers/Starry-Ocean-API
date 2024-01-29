@@ -41,7 +41,7 @@ The Starry Ocean API allows you to search for characters from the following Star
 
 ### Options
 <!-- * Install this app for its GUI (as seen on: https://www.matthewsummers.dev/starry-ocean/) -->
-* Install this app for its GUI (as seen on: [Starry Ocean](https://www.matthewsummers.dev/starry-ocean){:target="_blank"})
+* Install this app for its GUI as seen on: [Starry Ocean](https://www.matthewsummers.dev/starry-ocean){:target="_blank"} 
     - Follow this documentation fully
 * Don't install this app and just call the hosted API directly to access the data
     - Skip to `4. ENDPOINTS` below
