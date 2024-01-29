@@ -132,11 +132,11 @@ List of Endpoints
 
 #### 1. `starry-ocean/series/{series_number}`
 
-    Retrieve all characters from the specified Star Ocean series.
+Retrieve all characters from the specified Star Ocean series.
 
-    Calls for either Star Ocean 1 game will be handled simply by one endpoint: /starry-ocean/series/1
+Calls for either Star Ocean 1 game will be handled simply by one endpoint: /starry-ocean/series/1
 
-    Likewise for Star Ocean 2: /starry-ocean/series/2
+Likewise for Star Ocean 2: /starry-ocean/series/2
 
 **Parameters:**
 
