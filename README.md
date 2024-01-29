@@ -6,9 +6,9 @@ Starry Ocean API Documentation
 ### TABLE OF CONTENTS
 
 * 1.  Explanation
-  - Overview
-  - Options
-  - Features
+    - Overview
+    - Options
+    - Features
 * 2. Requirements & Installation
 * 3.  Data Type
 * 4.  Endpoints
