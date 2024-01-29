@@ -123,14 +123,14 @@ Project urls.py:
 * * * 
 ### 4. ENDPOINTS
 
-* List of Endpoints
-    -   `starry-ocean/series/{series_number}`
-    -   `starry-ocean/series/{series_number}/characters/{character_name}`
-    -   `starry-ocean/characters/{character_name}`
-    -   `starry-ocean/characters/all`
+List of Endpoints
+  -   `starry-ocean/series/{series_number}`
+  -   `starry-ocean/series/{series_number}/characters/{character_name}`
+  -   `starry-ocean/characters/{character_name}`
+  -   `starry-ocean/characters/all`
 
 
-**1. `starry-ocean/series/{series_number}`**
+#### 1. `starry-ocean/series/{series_number}`
 
     Retrieve all characters from the specified Star Ocean series.
 
@@ -196,7 +196,7 @@ Project urls.py:
 
 
 
-**2. `starry-ocean/series/{series_number}/characters/{character_name}`**
+#### 2. `starry-ocean/series/{series_number}/characters/{character_name}`
 
     Direct look-up to retrieve a specific character from a specific series.
 
@@ -236,7 +236,7 @@ Project urls.py:
 ```
 
 
-**3. `starry-ocean/characters/{character_name}`**
+#### 3. `starry-ocean/characters/{character_name}`
 
     Retrieve a single character by providing a partial or exact character name.
 
@@ -268,7 +268,7 @@ Project urls.py:
 }
 ```
 
-**4. `starry-ocean/characters/all`**
+#### 4. `starry-ocean/characters/all`
 
     Retrieve all characters from Star Ocean 1 and Star Ocean 2.
 
